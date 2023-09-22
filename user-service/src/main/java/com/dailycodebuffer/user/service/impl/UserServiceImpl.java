@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     public ResponseTemplateVO getUserWithDepartment (Long userId){
         ResponseTemplateVO response = new ResponseTemplateVO();
         User user = userRepository.findByUserId(userId);
-        Department department = restTemplate.getForObject("http://localhost:8585/api/departments/"+user.getId(), Department.class);
+        Department department = restTemplate.getForObject("http://DEPARTMENT-SERVICE/api/departments/"+user.getId(), Department.class);
         response.setUser(user);
         response.setDepartment(department);
         return response;
