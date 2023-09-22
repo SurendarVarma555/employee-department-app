@@ -17,7 +17,7 @@ public class DepartmentController {
         return new ResponseEntity<>(departmentService.saveDepartment(department), HttpStatus.CREATED);
     }
     @GetMapping("/{id}")
-    public ResponseEntity<Department> getDepartment(@PathVariable("id") long id){
+    public ResponseEntity<Department> getDepartment(@PathVariable("id") Long id){
         return  new ResponseEntity<>(departmentService.getDepartment(id),HttpStatus.OK);
 
     }

@@ -19,7 +19,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Department getDepartment (long id){
+    public Department getDepartment (Long id){
         return departmentRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Department","id",id));
     }
 
