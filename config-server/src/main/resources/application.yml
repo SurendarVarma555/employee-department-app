@@ -1,0 +1,12 @@
+server:
+  port: 8587
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SurendarVarma555/employee-department-app/tree/main/common-config
+          clone-on-start: true
