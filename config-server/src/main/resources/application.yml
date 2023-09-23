@@ -1,5 +1,5 @@
 server:
-  port: 8587
+  port: 9004
 
 spring:
   application:
@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/SurendarVarma555/employee-department-app/tree/main/common-config
+          uri: https://github.com/SurendarVarma555/collections-common-config.git
           clone-on-start: true
